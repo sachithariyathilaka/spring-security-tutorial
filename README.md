@@ -4,9 +4,9 @@ Spring Boot project for describe the spring security.
 * ### Technologies
     * Java 17
     * Spring Boot 3.2.4
-    * Spring Security
-    * Spring Web
-    * Spring Data JPA
+    * Spring Boot Starter Security
+    * Spring Boot Starter Web
+    * Spring Boot Starter Data JPA
     * JWT 0.9.1
     * JWT Helper 1.0.1
     * MySQL 8.0.33
