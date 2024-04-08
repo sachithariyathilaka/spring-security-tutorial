@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "7e77cd0e-dfc9-4903-a849-a3bab89176a0",
+		"name": "Spring Security Tutorial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7110933"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"sachith.vidu@yahoo.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/spring-security-tutorial/api/authentication/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"spring-security-tutorial",
+								"api",
+								"authentication",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"sachith.vidu@yahoo.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/spring-security-tutorial/api/authentication/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"spring-security-tutorial",
+								"api",
+								"authentication",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Load",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWNoaXRoLnZpZHVAeWFob28uY29tIiwiZXhwIjoxNzEyNjY1NTkwLCJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6InNhY2hpdGgudmlkdUB5YWhvby5jb20ifSwiaWF0IjoxNzEyNTc5MTkwfQ.bbHgvCxJFVrGNXpHC3h8tnnUBZPrXztP5ZvDvFbw1uOk3_xAKYuhyxZ2pP_Rs7M09P4XHblyVNvuipGOV6B6Fw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/spring-security-tutorial/api/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"spring-security-tutorial",
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
