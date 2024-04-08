@@ -14,7 +14,7 @@ Spring Boot project for describe the spring security.
     * Maven
 
 * ### Configuration
-    * https://towardsdev.com/selenium-ee1292be0022
+    * https://sachithariyathilaka.medium.com/spring-security-e17c247d42c9
 
 * ### Release Note
 
