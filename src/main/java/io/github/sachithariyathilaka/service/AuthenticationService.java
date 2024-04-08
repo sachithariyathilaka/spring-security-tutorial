@@ -12,4 +12,5 @@ import io.github.sachithariyathilaka.resource.request.UserRequest;
  */
 public interface AuthenticationService {
     User registerUser(UserRequest userRequest);
+    String userLogin(UserRequest userRequest);
 }

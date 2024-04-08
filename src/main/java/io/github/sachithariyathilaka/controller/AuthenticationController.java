@@ -41,4 +41,27 @@ public class AuthenticationController {
         APIResponse<Long> apiResponse = new APIResponse<>(200, "User successfully registered! You can now log in to the system.", user.getId());
         return new ResponseEntity<>(apiResponse, HttpStatus.OK);
     }
+
+    /**
+     * User login post rest api.
+     *
+     * @param   userRequest the user request
+     *
+     * @return  the api response
+     */
+    @PostMapping("/login")
+    public ResponseEntity<APIResponse<String>> userLogin(@RequestBody UserRequest userRequest) {
+       String token = authenticationService.userLogin(userRequest);
+       APIResponse<String> apiResponse;
+
+       if (token == null)
+       {
+           apiResponse = new APIResponse<>(204, "Cannot find the user!", null);
+           return new ResponseEntity<>(apiResponse, HttpStatus.NO_CONTENT);
+       } else
+       {
+           apiResponse = new APIResponse<>(200, "User logged in successfully!", token);
+           return new ResponseEntity<>(apiResponse, HttpStatus.OK);
+       }
+    }
 }
