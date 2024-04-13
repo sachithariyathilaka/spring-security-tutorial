@@ -210,17 +210,21 @@
 
 		<!-- Resource information -->
 		<resources>
+
 			<resource>
 				<directory>${basedir}/src/main/resources</directory>
 			</resource>
+
 		</resources>
 
 		<!-- Plugin information -->
 		<plugins>
+
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
 		</plugins>
 
 	</build>
