@@ -13,13 +13,13 @@ Spring Boot project for describe the spring security.
     * Lombok 1.18.28
     * Maven
 
-* ### Configuration
-    * https://sachithariyathilaka.medium.com/spring-security-e17c247d42c9
+* ### Documentation
+    * [Read on Medium](https://sachithariyathilaka.medium.com/spring-security-e17c247d42c9)
 
 * ### Release Note
 
-    * Release: 1.0.0
-    * Date: 2024/04/07
+    * Version: 1.0.0
+    * Release Date: 2024/04/07
     * Module: Spring Security Tutorial
     * Changes
         * Implements the spring security configurations.
